@@ -2,7 +2,8 @@ module XRootD
 
 
 using CxxWrap
-@wrapmodule(()->"$(@__DIR__)/../deps/libjlXRootD")
+import Libdl
+@wrapmodule(()->"$(@__DIR__)/../deps/libjlXRootD." * Libdl.dlext)
 
 function __init__()
     @initcxx

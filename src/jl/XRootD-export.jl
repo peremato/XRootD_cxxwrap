@@ -4,13 +4,13 @@ export ExtendedFormat, Fcntl, Free, FromString, Get, GetAccessTime, GetAccessTim
 export GetBufferAtCursor, GetChangeTime, GetChangeTimeAsString, GetChannelId, GetChecksum, GetChunks, GetCksums, GetCursor
 export GetErrorMessage, GetFileHandle, GetFlags, GetFreeRW, GetFreeStaging, GetGroup, GetHostAddress, GetHostId, GetHostInfo
 export GetHostName, GetId, GetLength, GetLocation, GetLoginToken, GetModTime, GetModTimeAsString, GetModeAsOctString
-export GetModeAsString, GetName, GetNbRepair, GetNodesRW, GetNodesStaging, GetOffset, GetOwner, GetParamsAsString, GetParentName
-export GetPassword, GetPath, GetPathWithFilteredParams, GetPathWithParams, GetPort, GetProperty, GetProtocol, GetSessionId
-export GetShellCode, GetSize, GetStatInfo, GetType, GetURL, GetUserName, GetUtilizationRW, GetUtilizationStaging, GetVersion, Grab
-export HandleResponse, HandleResponseWithHosts, HasChecksum, HasProperty, IsError, IsFatal, IsLocalFile, IsManager, IsMetalink, IsOK
-export IsOpen, IsSecure, IsServer, IsTPC, IsValid, JobProgress, Locate, MkDir, Mv, NeedRetry, Open, ParseServerResponse
-export PgRead, PgWrite, Ping, Prepare, Protocol, Query, ReAllocate, Read, ReadV, Release, Rm, RmDir, Run, SendCache, SendInfo
-export Set, SetCursor, SetErrorMessage, SetFlags, SetHostName, SetHostPort, SetNbRepair, SetParams, SetParentName
+export GetModeAsString, GetName, GetNbRepair, GetNodesRW, GetNodesStaging, GetObfuscatedURL, GetOffset, GetOwner, GetParamsAsString
+export GetParentName, GetPassword, GetPath, GetPathWithFilteredParams, GetPathWithParams, GetPort, GetProperty, GetProtocol
+export GetSessionId, GetShellCode, GetSize, GetStatInfo, GetType, GetURL, GetUserName, GetUtilizationRW, GetUtilizationStaging
+export GetVersion, Grab, HandleResponse, HandleResponseWithHosts, HasChecksum, HasProperty, IsError, IsFatal, IsLocalFile
+export IsManager, IsMetalink, IsOK, IsOpen, IsSecure, IsServer, IsTPC, IsValid, JobProgress, Locate, MkDir, Mv, NeedRetry, Open
+export ParseServerResponse, PgRead, PgWrite, Ping, Prepare, Protocol, Query, ReAllocate, Read, ReadV, Release, Rm, RmDir, Run, SendCache
+export SendInfo, Set, SetCursor, SetErrorMessage, SetFlags, SetHostName, SetHostPort, SetNbRepair, SetParams, SetParentName
 export SetPassword, SetPath, SetPort, SetProperty, SetProtocol, SetSize, SetStatInfo, SetUserName, ShouldCancel, Size, Stat
 export StatVFS, Sync, TestFlags, TestHostInfo, ToStr, ToString, Truncate, TryOtherServer, VectorRead, VectorWrite, Visa, Write
 export WriteV, XrdCl!Access, XrdCl!Access!GR, XrdCl!Access!GW, XrdCl!Access!GX, XrdCl!Access!Mode, XrdCl!Access!None
