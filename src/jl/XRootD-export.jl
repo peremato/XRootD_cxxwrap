@@ -10,7 +10,7 @@ export GetSessionId, GetShellCode, GetSize, GetStatInfo, GetType, GetURL, GetUse
 export GetVersion, Grab, HandleResponse, HandleResponseWithHosts, HasChecksum, HasProperty, IsError, IsFatal, IsLocalFile
 export IsManager, IsMetalink, IsOK, IsOpen, IsSecure, IsServer, IsTPC, IsValid, JobProgress, Locate, MkDir, Mv, NeedRetry, Open
 export ParseServerResponse, PgRead, PgWrite, Ping, Prepare, Protocol, Query, ReAllocate, Read, ReadV, Release, Rm, RmDir, Run, SendCache
-export SendInfo, Set, SetCursor, SetErrorMessage, SetFlags, SetHostName, SetHostPort, SetNbRepair, SetParams, SetParentName
+export SendInfo, SetCursor, SetErrorMessage, SetFlags, SetHostName, SetHostPort, SetNbRepair, SetParams, SetParentName
 export SetPassword, SetPath, SetPort, SetProperty, SetProtocol, SetSize, SetStatInfo, SetUserName, ShouldCancel, Size, Stat
 export StatVFS, Sync, TestFlags, TestHostInfo, ToStr, ToString, Truncate, TryOtherServer, VectorRead, VectorWrite, Visa, Write
 export WriteV, XrdCl!Access, XrdCl!Access!GR, XrdCl!Access!GW, XrdCl!Access!GX, XrdCl!Access!Mode, XrdCl!Access!None
@@ -28,23 +28,23 @@ export XrdCl!OpenFlags!None, XrdCl!OpenFlags!POSC, XrdCl!OpenFlags!PrefName, Xrd
 export XrdCl!OpenFlags!Replica, XrdCl!OpenFlags!SeqIO, XrdCl!OpenFlags!Update, XrdCl!OpenFlags!Write, XrdCl!OpenInfo, XrdCl!PageInfo
 export XrdCl!PrepareFlags, XrdCl!PrepareFlags!Cancel, XrdCl!PrepareFlags!Colocate, XrdCl!PrepareFlags!Evict, XrdCl!PrepareFlags!Flags
 export XrdCl!PrepareFlags!Fresh, XrdCl!PrepareFlags!None, XrdCl!PrepareFlags!Stage, XrdCl!PrepareFlags!WriteMode, XrdCl!PropertyList
-export XrdCl!ProtocolInfo, XrdCl!ProtocolInfo!AttrMeta, XrdCl!ProtocolInfo!AttrProxy, XrdCl!ProtocolInfo!AttrSuper
-export XrdCl!ProtocolInfo!HostTypes, XrdCl!ProtocolInfo!IsManager, XrdCl!ProtocolInfo!IsServer, XrdCl!QueryCode, XrdCl!QueryCode!Checksum
-export XrdCl!QueryCode!ChecksumCancel, XrdCl!QueryCode!Code, XrdCl!QueryCode!Config, XrdCl!QueryCode!Opaque, XrdCl!QueryCode!OpaqueFile
-export XrdCl!QueryCode!Prepare, XrdCl!QueryCode!Space, XrdCl!QueryCode!Stats, XrdCl!QueryCode!Visa, XrdCl!QueryCode!XAttr
-export XrdCl!ResponseHandler, XrdCl!RetryInfo, XrdCl!StatInfo, XrdCl!StatInfo!BackUpExists, XrdCl!StatInfo!Flags, XrdCl!StatInfo!IsDir
-export XrdCl!StatInfo!IsReadable, XrdCl!StatInfo!IsWritable, XrdCl!StatInfo!Offline, XrdCl!StatInfo!Other, XrdCl!StatInfo!POSCPending
-export XrdCl!StatInfo!XBitSet, XrdCl!StatInfoVFS, XrdCl!Status, XrdCl!Status!IsSocketError, XrdCl!URL, XrdCl!VectorReadInfo, XrdCl!XAttr
-export XrdCl!XAttrStatus, XrdCl!XRootDStatus, XrdCl!errAuthFailed, XrdCl!errCheckSumError, XrdCl!errConfig, XrdCl!errConnectionError
-export XrdCl!errCorruptedHeader, XrdCl!errDataError, XrdCl!errErrorResponse, XrdCl!errFcntl, XrdCl!errHandShakeFailed, XrdCl!errInProgress
-export XrdCl!errInternal, XrdCl!errInvalidAddr, XrdCl!errInvalidArgs, XrdCl!errInvalidMessage, XrdCl!errInvalidOp
-export XrdCl!errInvalidRedirectURL, XrdCl!errInvalidResponse, XrdCl!errInvalidSession, XrdCl!errLocalError, XrdCl!errLoginFailed
-export XrdCl!errNoMoreFreeSIDs, XrdCl!errNoMoreReplicas, XrdCl!errNone, XrdCl!errNotFound, XrdCl!errNotImplemented, XrdCl!errNotSupported
-export XrdCl!errOSError, XrdCl!errOperationExpired, XrdCl!errOperationInterrupted, XrdCl!errPipelineFailed, XrdCl!errPoll
-export XrdCl!errPollerError, XrdCl!errQueryNotSupported, XrdCl!errRedirect, XrdCl!errRedirectLimit, XrdCl!errResponseNegative
-export XrdCl!errRetry, XrdCl!errSocketDisconnected, XrdCl!errSocketError, XrdCl!errSocketOptError, XrdCl!errSocketTimeout
-export XrdCl!errStreamDisconnect, XrdCl!errThresholdExceeded, XrdCl!errTlsError, XrdCl!errUninitialized, XrdCl!errUnknown
-export XrdCl!errUnknownCommand, XrdCl!stError, XrdCl!stFatal, XrdCl!stOK, XrdCl!suAlreadyDone, XrdCl!suContinue, XrdCl!suDone
-export XrdCl!suNotStarted, XrdCl!suPartial, XrdCl!suRetry, XrdCl!xattr_name, XrdCl!xattr_value, Zero, and!, buffer, buffer!, code, code!
-export errNo, errNo!, flags, flags!, iovec, length, length!, loadBalancer, loadBalancer!, name, name!, offset, offset!, or!
-export protocol, protocol!, status, status!, url, url!, value, value!, xor!
+export XrdCl!ProtocolInfo, XrdCl!ProtocolInfo!AttrCache, XrdCl!ProtocolInfo!AttrMeta, XrdCl!ProtocolInfo!AttrProxy
+export XrdCl!ProtocolInfo!AttrSuper, XrdCl!ProtocolInfo!HostTypes, XrdCl!ProtocolInfo!IsManager, XrdCl!ProtocolInfo!IsServer, XrdCl!QueryCode
+export XrdCl!QueryCode!Checksum, XrdCl!QueryCode!ChecksumCancel, XrdCl!QueryCode!Code, XrdCl!QueryCode!Config, XrdCl!QueryCode!Opaque
+export XrdCl!QueryCode!OpaqueFile, XrdCl!QueryCode!Prepare, XrdCl!QueryCode!Space, XrdCl!QueryCode!Stats, XrdCl!QueryCode!Visa
+export XrdCl!QueryCode!XAttr, XrdCl!ResponseHandler, XrdCl!RetryInfo, XrdCl!StatInfo, XrdCl!StatInfo!BackUpExists, XrdCl!StatInfo!Flags
+export XrdCl!StatInfo!IsDir, XrdCl!StatInfo!IsReadable, XrdCl!StatInfo!IsWritable, XrdCl!StatInfo!Offline, XrdCl!StatInfo!Other
+export XrdCl!StatInfo!POSCPending, XrdCl!StatInfo!XBitSet, XrdCl!StatInfoVFS, XrdCl!Status, XrdCl!Status!IsSocketError, XrdCl!URL
+export XrdCl!VectorReadInfo, XrdCl!XAttr, XrdCl!XAttrStatus, XrdCl!XRootDStatus, XrdCl!errAuthFailed, XrdCl!errCheckSumError
+export XrdCl!errConfig, XrdCl!errConnectionError, XrdCl!errCorruptedHeader, XrdCl!errDataError, XrdCl!errErrorResponse, XrdCl!errFcntl
+export XrdCl!errHandShakeFailed, XrdCl!errInProgress, XrdCl!errInternal, XrdCl!errInvalidAddr, XrdCl!errInvalidArgs, XrdCl!errInvalidMessage
+export XrdCl!errInvalidOp, XrdCl!errInvalidRedirectURL, XrdCl!errInvalidResponse, XrdCl!errInvalidSession, XrdCl!errLocalError
+export XrdCl!errLoginFailed, XrdCl!errNoMoreFreeSIDs, XrdCl!errNoMoreReplicas, XrdCl!errNone, XrdCl!errNotFound, XrdCl!errNotImplemented
+export XrdCl!errNotSupported, XrdCl!errOSError, XrdCl!errOperationExpired, XrdCl!errOperationInterrupted, XrdCl!errPipelineFailed
+export XrdCl!errPoll, XrdCl!errPollerError, XrdCl!errQueryNotSupported, XrdCl!errRedirect, XrdCl!errRedirectLimit
+export XrdCl!errResponseNegative, XrdCl!errRetry, XrdCl!errSocketDisconnected, XrdCl!errSocketError, XrdCl!errSocketOptError
+export XrdCl!errSocketTimeout, XrdCl!errStreamDisconnect, XrdCl!errThresholdExceeded, XrdCl!errTlsError, XrdCl!errUninitialized
+export XrdCl!errUnknown, XrdCl!errUnknownCommand, XrdCl!stError, XrdCl!stFatal, XrdCl!stOK, XrdCl!suAlreadyDone, XrdCl!suContinue
+export XrdCl!suDone, XrdCl!suNotStarted, XrdCl!suPartial, XrdCl!suRetry, XrdCl!xattr_name, XrdCl!xattr_value, Zero, and!, buffer
+export buffer!, code, code!, errNo, errNo!, flags, flags!, iovec, length!, loadBalancer, loadBalancer!, name, name!, offset
+export offset!, or!, protocol, protocol!, status, status!, url!, value, value!, xor!
